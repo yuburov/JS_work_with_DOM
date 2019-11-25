@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="element">Element 1</div>
+	<div class="element">Element 2</div>
+	<div class="element">Element 3</div>
+	<div class="element">Element 4</div>
+	<div class="element">Element 5</div>
+	<div class="element">Element 6</div>
+
+	<script type="application/javascript">
+		// let div_1 = document.getElementsByTagName('div')[0].style.background = 'red';
+		// let div_2 = document.getElementsByTagName('div')[1].style.background = 'red';
+		// let div_3 = document.getElementsByTagName('div')[2].style.background = 'red';
+		// let div_4 = document.getElementsByTagName('div')[3].style.background = 'green';
+		// let div_5 = document.getElementsByTagName('div')[4].style.background = 'green';
+		// let div_6 = document.getElementsByTagName('div')[5].style.background = 'green';
+		let div = document.getElementsByTagName('div')
+
+		for(let i=0; i < div.length; i++) {
+			document.getElementsByTagName('div')[i].style.background = 'red';
+			if (div[i] == div[2]) {
+				break;
+			}
+		};
+		for(let i=3; i < div.length; i++) {
+			document.getElementsByTagName('div')[i].style.background = 'green';
+			if (div[i] == div[5]) {
+				break;
+			}
+		};
+	</script>
+
+</body>
+</html>
