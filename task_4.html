@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="container"></div>
+	<input type="button" id="add-item-btn" value="+">
+
+	<script type="application/javascript">
+		let container = document.getElementById('container')
+
+		function onButtonClick() {
+			let element = document.createElement('div');
+			element.classList.add('element');
+			element.innerText = 'Element'; 
+			container.appendChild(element);
+			console.log(container);
+			console.log(input)
+		}
+
+		var input = document.getElementsByTagName('input')[0];
+		input.onclick = onButtonClick;
+	</script>
+
+</body>
+</html>
